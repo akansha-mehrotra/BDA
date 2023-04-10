@@ -1,0 +1,32 @@
+// use myDB;
+// db;
+// show dbs;
+
+// db.createCollection("Student");
+
+// db.Student.insert({_id:1, StudName:"MichelleJacintha",Grade:"VII",Hobbies:"InternetSurfing"});
+
+// var mystudent=[{_id:4,StudName:"Saurav", Grade:"V", Hobbies:"Dance"},
+// {_id:5,StudName:"Kumar",Grade:"VI",Hobbies:"Singing"}]
+// db.Student.insert(mystudent)
+
+// db.Student.update({_id:2,StudName:"AryanDavid",Grade:"VII"},{$set:{Hobbies:"Skating"}},{upsert:true});
+// db.Student.find({StudName:"AryanDavid"});
+// db.Student.drop();
+
+// db.Student.find({},{StudName:1,Grade:1,_id:0});
+
+// db.Student.find({Grade:{$eq:'VII'}}).pretty();
+
+// db.Student.find({Hobbies:{$in:['Chess','Skating']}}).pretty();
+
+// db.Student.find({StudName:/e/}).pretty();
+
+// db.Student.count();
+
+// db.Student.find().sort({StudName:-1}).pretty();
+
+
+//SAVE METHOD
+
+db.Student.save({StudName:"Vamsi",Grade:"VI"})
